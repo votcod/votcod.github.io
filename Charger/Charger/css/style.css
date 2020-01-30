@@ -698,6 +698,10 @@ body {
   font-weight: 400;
   line-height: 32px;
 }
+.get__item {
+  text-align: center;
+}
+
 .business {
   padding: 70px 0px 0px 0px;
   position: absolute;
