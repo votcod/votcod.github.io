@@ -873,6 +873,9 @@ body {
     margin: 0;
     padding: 15px 0px 15px 80px;
   }
+  .business__list li:nth-child(4), .business__list li:nth-child(5) {
+    display: none;
+  }
 }
 .business__column-item {
   padding: 0 9px;
