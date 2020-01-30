@@ -110,10 +110,10 @@ body {
 /* Слайд */
 .slick-slide {
 	transition: all 2s ease 0s;
-	// @media (max-width:400px){
-	// 	opacity: 0.3;
+	@media (max-width:400px){
+		opacity: 0.3;
 		
-	// }
+	}
 	
 }
 
@@ -124,9 +124,9 @@ body {
 
 /* Слайд основной */
 .slick-slide.slick-current {
-	// @media (max-width:400px){
-	// 	opacity: 1;
-	// }
+	@media (max-width:400px){
+		opacity: 1;
+	}
 	
 }
 
