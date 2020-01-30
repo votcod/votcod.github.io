@@ -364,7 +364,6 @@ body {
 }
 @media (max-width: 400px) {
   .full-screen__form_item {
-    padding: 15px 10px;
     margin: 0px 0px 15px 0px;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
