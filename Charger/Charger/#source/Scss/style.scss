@@ -800,13 +800,14 @@ line-height: 32px;
         padding: 18px 15px;
         border: 2px solid #3cd072;
         @media (max-width:400px){
+            padding: 20px 15px;
             flex: 0 1 100%;
             margin: 0px 0px 20px 0px;
         }
         &::placeholder{
 
           color: #3cd072;
-          // font-family: 'Myriad Pro-Regular';
+          font-family: 'Myriad Pro-Regular';
           font-size: 16px;
           line-height: 24px;
         }
@@ -1169,6 +1170,9 @@ line-height: 32px;
         }
         @media (max-width:650px){
           margin: 0px 0px 15px 0px;
+        }
+        @media (max-width:400px){
+            padding: 20px 15px;
         }
     }
     &__form-btn {
