@@ -364,7 +364,6 @@ body {
 }
 @media (max-width: 400px) {
   .full-screen__form_item {
-    padding: 15px 10px;
     margin: 0px 0px 15px 0px;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
@@ -373,30 +372,35 @@ body {
 }
 .full-screen__form_item::-webkit-input-placeholder {
   color: #ffffff;
+  font-family: "Myriad Pro-Regular";
   font-size: 16px;
   line-height: 24px;
   overflow: auto;
 }
 .full-screen__form_item::-moz-placeholder {
   color: #ffffff;
+  font-family: "Myriad Pro-Regular";
   font-size: 16px;
   line-height: 24px;
   overflow: auto;
 }
 .full-screen__form_item:-ms-input-placeholder {
   color: #ffffff;
+  font-family: "Myriad Pro-Regular";
   font-size: 16px;
   line-height: 24px;
   overflow: auto;
 }
 .full-screen__form_item::-ms-input-placeholder {
   color: #ffffff;
+  font-family: "Myriad Pro-Regular";
   font-size: 16px;
   line-height: 24px;
   overflow: auto;
 }
 .full-screen__form_item::placeholder {
   color: #ffffff;
+  font-family: "Myriad Pro-Regular";
   font-size: 16px;
   line-height: 24px;
   overflow: auto;
