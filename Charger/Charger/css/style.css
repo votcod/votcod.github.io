@@ -353,7 +353,7 @@ body {
 }
 @media (max-width: 400px) {
   .full-screen__form_item {
-    padding: 20px 15px;
+    padding: 22px 15px;
     font-size: 16px;
     margin: 0px 0px 15px 0px;
     -webkit-box-flex: 0;
@@ -364,35 +364,35 @@ body {
 .full-screen__form_item::-webkit-input-placeholder {
   color: #ffffff;
   font-family: "Myriad Pro-Regular";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   overflow: auto;
 }
 .full-screen__form_item::-moz-placeholder {
   color: #ffffff;
   font-family: "Myriad Pro-Regular";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   overflow: auto;
 }
 .full-screen__form_item:-ms-input-placeholder {
   color: #ffffff;
   font-family: "Myriad Pro-Regular";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   overflow: auto;
 }
 .full-screen__form_item::-ms-input-placeholder {
   color: #ffffff;
   font-family: "Myriad Pro-Regular";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   overflow: auto;
 }
 .full-screen__form_item::placeholder {
   color: #ffffff;
   font-family: "Myriad Pro-Regular";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   overflow: auto;
 }
@@ -937,7 +937,7 @@ body {
 }
 @media (max-width: 400px) {
   .date__form-item {
-    padding: 20px 15px;
+    padding: 22px 15px;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
@@ -947,31 +947,31 @@ body {
 .date__form-item::-webkit-input-placeholder {
   color: #3cd072;
   font-family: "Myriad Pro-Regular";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .date__form-item::-moz-placeholder {
   color: #3cd072;
   font-family: "Myriad Pro-Regular";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .date__form-item:-ms-input-placeholder {
   color: #3cd072;
   font-family: "Myriad Pro-Regular";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .date__form-item::-ms-input-placeholder {
   color: #3cd072;
   font-family: "Myriad Pro-Regular";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .date__form-item::placeholder {
   color: #3cd072;
   font-family: "Myriad Pro-Regular";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .date__form-item:focus::-webkit-input-placeholder {
@@ -1402,27 +1402,27 @@ body {
 }
 .contacts__form-item::-webkit-input-placeholder {
   color: #3cd072;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .contacts__form-item::-moz-placeholder {
   color: #3cd072;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .contacts__form-item:-ms-input-placeholder {
   color: #3cd072;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .contacts__form-item::-ms-input-placeholder {
   color: #3cd072;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .contacts__form-item::placeholder {
   color: #3cd072;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 }
 .contacts__form-item:focus::-webkit-input-placeholder {
@@ -1447,7 +1447,7 @@ body {
 }
 @media (max-width: 400px) {
   .contacts__form-item {
-    padding: 20px 15px;
+    padding: 22px 15px;
   }
 }
 .contacts__form-btn {
