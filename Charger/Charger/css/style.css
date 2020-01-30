@@ -166,20 +166,9 @@ body {
   -o-transition: all 2s ease 0s;
   transition: all 2s ease 0s;
 }
-@media (max-width: 400px) {
-  .slick-slide {
-    opacity: 0.3;
-  }
-}
 
 /* Слайд активный (показывается) */
 /* Слайд основной */
-@media (max-width: 400px) {
-  .slick-slide.slick-current {
-    opacity: 1;
-  }
-}
-
 /* Слайд по центру */
 /* Клонированный слайд */
 /* Стрелка */
