@@ -27,7 +27,7 @@ $(document).ready(function(){
 		/*точки*/
 		dots:false,
 		/*центрирование текущего слайда. Лучше всего использовать с text-align: center; для item*/
-		centerMode: false,
+		centerMode: true,
 		/*кол-во слайдов для показа*/
 		slidesToShow:10,
 		/*кол-во слайдов, которые будут пролистываться за один клик*/
