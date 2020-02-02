@@ -364,35 +364,35 @@ body {
 .full-screen__form_item::-webkit-input-placeholder {
   color: #ffffff;
   font-family: "Myriad Pro-Regular";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   overflow: auto;
 }
 .full-screen__form_item::-moz-placeholder {
   color: #ffffff;
   font-family: "Myriad Pro-Regular";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   overflow: auto;
 }
 .full-screen__form_item:-ms-input-placeholder {
   color: #ffffff;
   font-family: "Myriad Pro-Regular";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   overflow: auto;
 }
 .full-screen__form_item::-ms-input-placeholder {
   color: #ffffff;
   font-family: "Myriad Pro-Regular";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   overflow: auto;
 }
 .full-screen__form_item::placeholder {
   color: #ffffff;
   font-family: "Myriad Pro-Regular";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   overflow: auto;
 }
@@ -947,31 +947,31 @@ body {
 .date__form-item::-webkit-input-placeholder {
   color: #3cd072;
   font-family: "Myriad Pro-Regular";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 .date__form-item::-moz-placeholder {
   color: #3cd072;
   font-family: "Myriad Pro-Regular";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 .date__form-item:-ms-input-placeholder {
   color: #3cd072;
   font-family: "Myriad Pro-Regular";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 .date__form-item::-ms-input-placeholder {
   color: #3cd072;
   font-family: "Myriad Pro-Regular";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 .date__form-item::placeholder {
   color: #3cd072;
   font-family: "Myriad Pro-Regular";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 .date__form-item:focus::-webkit-input-placeholder {
@@ -1382,6 +1382,11 @@ body {
     margin: 0px 0px 12px 0px;
   }
 }
+@media (max-width: 400px) {
+  .contacts__title {
+    display: none;
+  }
+}
 .contacts__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1402,27 +1407,27 @@ body {
 }
 .contacts__form-item::-webkit-input-placeholder {
   color: #3cd072;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 .contacts__form-item::-moz-placeholder {
   color: #3cd072;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 .contacts__form-item:-ms-input-placeholder {
   color: #3cd072;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 .contacts__form-item::-ms-input-placeholder {
   color: #3cd072;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 .contacts__form-item::placeholder {
   color: #3cd072;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 .contacts__form-item:focus::-webkit-input-placeholder {

@@ -1149,6 +1149,9 @@ line-height: 32px;
       @media (max-width:650px){
             margin: 0px 0px 12px 0px;
         }
+        @media (max-width:400px){
+            display: none;
+        }
     }
     &__form {
         display: flex;
