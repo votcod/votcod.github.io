@@ -1,0 +1,758 @@
+// Обнуление
+
+@import "nulllist.scss";
+
+// Шрифты
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+@font-face {
+  font-family: 'AkzidenzGroteskBQCondensedBold';
+  src: url("../fonts/AkzidenzGroteskBQCondensedBold.eot");
+  src: local("☺"), url("../fonts/AkzidenzGroteskBQCondensedBold.woff") format("woff"), url("../fonts/AkzidenzGroteskBQCondensedBold.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBQCondensedBold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bebas';
+  src: url("../fonts/BebasNeueRegular.eot");
+  src: local("☺"), url("../fonts/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular.ttf") format("truetype"), url("../fonts/BebasNeueRegular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+// Стили для демонстрации
+
+body{
+	font-family: 'PT Sans', sans-serif;
+	&.lock{
+		overflow: hidden;
+	}
+}
+
+.wrapper{
+	min-height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container{
+	padding: 0 15px;
+	margin: 0px auto;
+	max-width: 910px;
+}
+
+.ibg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    img {
+        display: none;
+    }
+}
+
+// Стили Slick-слайдера
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {}
+/* Лента слайдов */
+.slick-track{}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+
+// Основные стили
+.content {
+	flex: 1 1 100%;
+}
+.header {
+	position: relative;
+	width: 100%;
+	z-index: 50;
+	&__body {
+		padding: 34px 0;
+		display: flex;
+		align-items: center;
+		height: 175px;
+		justify-content: center;
+		@media (max-width:450px){
+			padding: 20px 0;
+			height: 147px;
+		}
+
+	}
+	&__logo {
+		position: relative;
+		z-index: 3;
+		img{
+			max-width: 100%;
+		}
+		@media (max-width:400px){
+			flex: 0 0 180px;
+		}
+	}
+	&__burger {
+		display: none;
+		@media (max-width:767px){
+			display: block;
+			width: 30px;
+			height: 20px;
+			z-index: 3;
+			position: absolute;
+			top: 50%;
+			transform: translate3d(0px,-50%, 0px);
+			right: 15px;
+			&:after,
+			&:before{
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 1px;
+				background-color: #000;
+				transition: all 0.5s ease 0s;
+			}
+			&:after{
+				bottom: 0;
+			}
+			&:before{
+				top: 0;
+			}
+			span{
+				transition: all 0.5s ease 0s;
+				position: absolute;
+				width: 100%;
+				height: 1px;
+				top: 50%;
+				background-color: #000;
+			}
+			&.active:before{
+				top: 9px;
+				transform: rotate(-320deg);
+			}
+			&.active:after{
+				bottom: 9px;
+				transform: rotate(320deg);
+			}
+			&.active span{
+				transform: scale(0); 
+			}
+		}
+	}
+	&__menu {
+		@media (max-width:767px){
+			position: fixed;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: -100%;
+			padding: 180px 0px 0px 0px;
+			background-color: #fff;
+			transition: all 0.5s ease 0s;
+			&.active{
+				left: 0;
+			}
+		}
+		&_f{
+			@media (max-width:767px){
+				z-index: 3;
+				position: absolute;
+			}
+		}
+	}
+	&__list {
+		display: flex;
+			@media (max-width:767px){
+			display: block;
+			position: relative;
+			z-index: 3;
+		}
+		li{	
+			position: relative;
+			z-index: 3;
+
+			padding: 0 23px;
+			&:nth-child(3){
+				padding: 0 64px 0 23px;
+				@media (max-width:900px){
+				padding: 0 30px 0 15px;
+			}
+			@media (max-width:767px){
+			padding: 0px 0px 10px 20px;
+		}
+			}
+			@media (max-width:900px){
+				padding: 0 15px;
+			}
+		@media (max-width:767px){
+			padding: 0px 0px 10px 20px;
+		}
+	}
+	&_s{
+		@media (max-width:767px){
+			padding: 104px 0px 0px 0px;
+		}
+
+		li{
+			&:nth-child(1){
+				padding: 0 23px 0 64px;
+				@media (max-width:900px){
+				padding: 0 15px 0 30px;
+			}
+			@media (max-width:767px){
+			padding: 0px 0px 10px 20px;
+		}
+			}
+			&:nth-child(3){
+				padding: 0 23px;
+				@media (max-width:900px){
+				padding: 0 15px;
+			}
+			@media (max-width:767px){
+			padding: 0px 0px 10px 20px;
+		}
+			}
+			@media (max-width:767px){
+			padding: 0px 0px 10px 20px;
+		}
+		}
+	 }
+}
+	&__link {
+
+        color: #000000;
+        font-family: 'AkzidenzGroteskBQCondensedBold';
+        font-size: 15px;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        position: relative;
+		&:hover{
+        	&:after{
+        		content: '';
+        		position: absolute;
+        		width: 100%;
+        		bottom: 0;
+        		left: 0;
+        		height: 2px;
+        		background-color: #000;
+        	}
+        }
+        @media (max-width:767px){
+        	font-size: 25px;
+        }
+	}
+}
+.private {
+	&__row {
+		display: flex;
+	}
+	&__column {
+		flex: 0 1 50%;
+		background-color: #000;
+		@media (max-width:767px){
+			flex: 0 1 100%;
+		}
+		&_i{
+			@media (max-width:767px){
+				display: none;
+			}
+		}
+	}
+	&__item {
+		padding: 82px 0 72px 60px;
+		max-width: 362px;
+		@media (max-width:450px){
+			max-width: 100%;
+			padding: 30px 15px;
+		}
+	}
+	&__title {
+
+
+         color: #ffffff;
+         font-family: 'AkzidenzGroteskBQCondensedBold';
+         font-size: 50px;
+         line-height: 50px;
+         text-transform: uppercase;
+         letter-spacing: 5px;
+         margin: 0px 0px 37px 0px;
+	}
+	&__text {
+
+     
+     color: #ffffff;
+     font-size: 15px;
+     line-height: 25px;
+     margin: 0px 0px 55px 0px;
+	}
+	&__btn {
+		display: inline-block;
+
+        color: #000000;
+        font-family: Bebas;
+        font-size: 15px;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        background-color: #fff;
+        padding: 17px 34px;
+        margin: 0px 14px 0px 0px;
+		&_s {
+			display: inline-block;
+		    color: #fffffe;
+            font-family: Bebas;
+            font-size: 15px;
+            line-height: 25px;
+            text-decoration: underline;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+		}
+	}
+}
+
+.products {
+	padding: 75px 0 79px;
+	@media (max-width:767px){
+		padding: 75px 0 29px;
+	}
+	@media (max-width:450px){
+		padding: 45px 0 0;
+	}
+	&__row {
+		display: flex;
+		@media (max-width:767px){
+			flex-wrap: wrap;
+		}
+	}
+	&__column {
+		flex: 0 1 25%;
+		display: flex;
+		@media (max-width:767px){
+			flex: 0 1 50%;
+			margin: 0px 0px 50px 0px;
+		}
+		@media (max-width:450px){
+			flex: 0 1 100%;
+			text-align: center;
+			margin: 0px 0px 60px 0px;
+		}
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+	&__image {
+		flex: 0 0 225px;
+		img{
+			max-width: 100%;
+		}
+		margin: 0px 0px 25px 0px;
+		@media (max-width:450px){
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	&__title {
+
+        color: #000000;
+        font-family: 'AkzidenzGroteskBQCondensedBold';
+        font-size: 25px;
+        line-height: 25px;
+        text-transform: uppercase;
+        max-width: 121px;
+        letter-spacing: 2.5px;
+        margin: 0px 0px 36px 0px;
+        @media (max-width:450px){
+        	max-width: 100%;
+        	 margin: 0px 0px 23px 0px;
+        }
+	}
+	&__text {
+
+		max-width: 185px;
+        color: #000000;
+        font-size: 15px;
+        line-height: 25px;
+        margin: 0px 0px 32px 0px;
+        flex: 1 1 auto;
+        @media (max-width:450px){
+        	max-width: 100%;
+        	margin: 0px 0px 23px 0px;
+        }
+	}
+	&__btn {
+		display: inline-block;
+        color: #ffffff;
+        font-family: Bebas;
+        font-size: 15px;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        max-width: 155px;
+        text-align: center;
+        padding: 17px 34px;
+        background-color: #000;
+        margin: 0px 0px 30px 0px;
+        @media (max-width:450px){
+        	margin: 0px auto 20px auto;
+        }
+		&_s {
+		cursor: pointer;
+        color: #000000;
+        font-family: Bebas;
+        font-size: 15px;
+        line-height: 25px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+		}
+	}
+}
+
+.why {
+	&__row {
+		display: flex;
+	}
+	&__column {
+		background-color: #000;
+		flex: 0 1 50%;
+		@media (max-width:767px){
+			flex: 0 1 100%;
+		}
+
+
+		&__image {
+			@media (max-width:767px){
+				display: none;
+			}
+		}
+	}
+	&__item {
+		padding: 47px 60px;
+		display: flex;
+		justify-content: flex-end;
+		@media (max-width:1000px){
+			padding: 47px 30px;
+		}
+		@media (max-width:767px){
+			justify-content: center;
+		}
+		@media (max-width:500px){
+			padding: 30px;
+		}
+		
+	}
+	&__text {	
+
+        color: #ffffff;
+        font-family: 'AkzidenzGroteskBQCondensedBold';
+        font-size: 50px;
+        line-height: 55px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-align: center;
+        @media (max-width:500px){
+        	font-size: 40px;
+        }
+        @media (max-width:400px){
+        	font-size: 35px;
+        	line-height: 40px;
+        	letter-spacing: 3px;
+        }
+	}
+}
+
+.always {
+	background-color: #ebebeb;
+	padding: 50px 0 0;
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+		@media (max-width:900px){
+			margin: 0 -5px;
+		}
+		@media (max-width:767px){
+			margin: 0;
+		}
+	}
+	&__column {
+		flex: 0 1 50%;
+		padding: 0 15px;
+		margin: 0px 0px 50px 0px;
+		display: flex;
+		@media (max-width:900px){
+			padding: 0 5px;
+		}
+		@media (max-width:767px){
+			flex: 0 1 100%;
+			padding: 0;
+		}
+	}
+	&__item {
+		display: flex;
+
+	}
+	&__image {
+		background-color: #000;
+		min-width: 100px;
+	    display: flex;
+		justify-content:center;
+		align-items: center;
+		flex: 0 0 100px;
+		img{
+			max-width: 100%;
+			@media (max-width:450px){
+				max-width: 70%;
+			}
+		}
+		@media (max-width:900px){
+			align-self: center;
+			min-height: 100px;
+		}
+		@media (max-width:767px){
+			align-self: flex-start;
+		}
+		@media (max-width:450px){
+			min-width: 70px;
+			flex: 0 0 70px;
+			min-height: 70px;
+		}
+	}
+	&__body {
+		padding: 0px 0px 0px 12px;
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 100%;
+
+		
+		
+	}
+	&__title {
+
+        color: #000000;
+        font-family: 'AkzidenzGroteskBQCondensedBold';
+        font-size: 25px;
+        line-height: 25px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        margin: 0px 0px 36px 0px;
+       
+         @media (max-width:900px){
+        	margin: 0px 0px 15px 0px;
+        	font-size: 20px;
+        }
+        @media (max-width:767px){
+        	font-size: 25px;
+        }
+
+	}
+	&__text {
+        color: #000000;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        @media (max-width:900px){
+        	font-size: 13px;
+        }
+        @media (max-width:767px){
+        	font-size: 15px;
+        }
+        
+       
+	}
+}
+
+.say {
+	padding: 80px 0 0px;
+	&__title {
+     font-family: 'AkzidenzGroteskBQCondensedBold';
+     font-size: 50px;
+     line-height: 25px;
+     text-transform: uppercase;
+     letter-spacing: 0.1em;
+     color: #000000;
+     margin: 0px 0px 30px 0px;
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__column {
+		flex: 0 1 50%;
+		margin: 0px 0px 25px 0px;
+		@media (max-width:650px){
+			flex: 0 1 100%;
+		}
+	}
+	&__item {
+		display: flex;
+
+	}
+	&__icon {}
+	&__text {
+        font-size: 15px;
+        line-height: 25px;
+        color: #000000;
+        padding: 0px 0px 0px 10px;
+		
+        &_l{
+        	&:hover{
+        		text-decoration: underline;
+        	}
+        }
+        
+
+	}
+	&__list {
+		display: flex;
+		
+		li{
+			margin: 0 15px;
+			&:first-child{
+				margin: 0 15px 0 0;
+			}
+		}
+
+	}
+	&__social-icon {}
+}
+
+
+.get {
+	&__row {
+		display: flex;
+
+	}
+	&__column {
+		flex: 0 1 50%;
+		@media (max-width:767px){
+			flex: 0 1 100%;
+		}
+		&_f {
+			@media (max-width:767px){
+				display: none;
+			}
+		}
+	}
+	&__item {
+		padding: 50px 15px 50px 60px; 
+		background-color: #000;
+		@media (max-width:950px){
+			padding: 50px 15px 50px 30px;
+		}
+		@media (max-width:767px){
+			padding: 50px 15px 50px 15px;	
+		}
+		
+	}
+	&__title {
+    font-family: 'AkzidenzGroteskBQCondensedBold';
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    margin: 0px 0px 27px 0px;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		max-width: 374px;
+		@media (max-width:767px){
+			max-width: 100%;
+		}
+	}
+	&__form-item {
+		flex: 0 1 100%;
+		background-color: #252525;
+        border: 2px solid #959595;
+        padding: 18px 20px;
+        margin: 0px 0px 27px 0px;
+        &::placeholder{
+			font-size: 15px;
+            line-height: 25px;
+            color: #959595;
+        }
+        &:focus::placeholder{
+        	opacity: 0;
+        }
+
+	}
+	&__btn{
+		max-width: 155px;
+		padding: 18px 24px;
+		background-color: #fff;
+		font-family: 'Bebas';
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #000000;
+	}
+}
+
+
+
+.footer {
+	padding: 43px 0;
+	@media (max-width:450px){
+		padding: 43px 0 25px;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width:450px){
+			display: block;
+			text-align: center;
+		}
+	}
+	&__text {
+         font-size: 15px;
+         line-height: 25px;
+         color: #4d4d4d;
+    span{
+	text-decoration: underline;
+    }
+		@media (max-width:450px){
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	&__logo {
+		img{
+			max-width: 100%;
+		}
+	}
+}
+
