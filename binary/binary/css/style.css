@@ -319,6 +319,11 @@ body {
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+@media (max-height: 550px) {
+  .full-screen__arrows {
+    display: none;
+  }
+}
 @-webkit-keyframes arrows {
   0% {
     top: 0;
